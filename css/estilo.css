@@ -1,0 +1,58 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #bad1e9 !important; /* tom claro do Bootstrap */
+  }
+  
+  /* Navbar personalizada */
+  .navbar {
+    background-color: #003366 !important; /* azul escuro */
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .nav-link {
+    color: #a4b7e0 !important;
+    font-weight: 500;
+    padding: 10px 15px;
+  }
+  
+  /* Título principal */
+  h2 {
+    color: #003366;
+    font-weight: bold;
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #a6cdf7 !important;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: #003366;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Responsividade extra (opcional) */
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 200px;
+    }
+  }
+  
