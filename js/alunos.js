@@ -1,14 +1,14 @@
 // Configuração do Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyBx-wFdKUnjFkhgPiqp-Yi3VB36t57zjr0",
-    authDomain: "jquery-1c95a.firebaseapp.com",
-    databaseURL: "https://jquery-1c95a-default-rtdb.firebaseio.com",
-    projectId: "jquery-1c95a",
-    storageBucket: "jquery-1c95a.firebasestorage.app",
-    messagingSenderId: "453180360781",
-    appId: "1:453180360781:web:b75bc5ebcdb2076764f404",
-    measurementId: "G-1LBED4D114"
-};
+    apiKey: "AIzaSyBCUYlakfVfYHXZFW8MfB1fd2LbQ6i2RYc",
+    authDomain: "crud-dados.firebaseapp.com",
+    databaseURL: "https://crud-dados-default-rtdb.firebaseio.com",
+    projectId: "crud-dados",
+    storageBucket: "crud-dados.firebasestorage.app",
+    messagingSenderId: "618471645261",
+    appId: "1:618471645261:web:43aedbfcac5c6a04c3bc04",
+    measurementId: "G-YM16QN92VH"
+  };
 
 // Inicializa Firebase
 firebase.initializeApp(firebaseConfig);
