@@ -35,15 +35,15 @@
         <h2 class="mb-4">Cadastro de Curso</h2>
 
         <!-- Formulário -->
-        <form id="formUsuario" class="row g-3">
+        <form id="formCursos" class="row g-3">
             <input type="hidden" id="id">
             <div class="col-md-6">
                 <label for="name" class="form-label">Nome</label>
                 <input type="text" id="txtnome" class="form-control" required>
             </div>
             <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="txtemail" class="form-control" required>
+                <label for="iid" class="form-label">ID</label>
+                <input type="iid" id="txtiid" class="form-control" required>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Salvar</button>
@@ -51,16 +51,16 @@
         </form>
 
         <!-- Lista -->
-        <h4 class="mt-5">Usuários</h4>
+        <h4 class="mt-5">Cursos</h4>
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Email</th>
+                    <th>ID</th>
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody id="tabelaUsuarios">
+            <tbody id="tabelaCursos">
                 <!-- Usuários serão inseridos aqui -->
             </tbody>
         </table>
