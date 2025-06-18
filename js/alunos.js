@@ -24,6 +24,7 @@ function carregarAlunos() {
             const key = child.key;
             tbody.append(`
                 <tr>
+                    <td>${aluno.iid}</td>
                     <td>${aluno.nome}</td>
                     <td>${aluno.telefone}</td>
                     <td>${aluno.email}</td>
@@ -42,6 +43,7 @@ $("#formAluno").submit(function (e) {
     e.preventDefault();
 
     const id = $("#id").val();
+    const iid = $("#txtiid").val();
     const nome = $("#txtnome").val();
     const telefone = $("#txtfone").val();
     const email = $("#txtemail").val();
@@ -49,7 +51,7 @@ $("#formAluno").submit(function (e) {
     if (id) {
         db.child(id).update({ nome, telefone, email });
     } else {
-        db.push({ nome, telefone, email });
+        db.push({ iid, nome, telefone, email });
     }
 
     this.reset();
@@ -64,6 +66,7 @@ $(document).on("click", ".edit-btn", function () {
         .then((snapshot) => {
             const aluno = snapshot.val();
             $("#id").val(id);
+            $("#txtiid").val(aluno.iid);
             $("#txtnome").val(aluno.nome);
             $("#txtfone").val(aluno.telefone);
             $("#txtemail").val(aluno.email);
