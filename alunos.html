@@ -38,6 +38,10 @@
         <form id="formAluno" class="row g-3">
             <input type="hidden" id="id">
             <div class="col-md-6">
+                <label for="iid" class="form-label">ID</label>
+                <input type="iid" id="txtiid" class="form-control" required>
+            </div>
+            <div class="col-md-6">
                 <label for="name" class="form-label">Nome</label>
                 <input type="text" id="txtnome" class="form-control" required>
             </div>
@@ -59,6 +63,7 @@
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Telefone</th>
                     <th>Email</th>
